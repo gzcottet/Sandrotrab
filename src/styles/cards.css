@@ -1,0 +1,104 @@
+/* Estilo para o contêiner principal */
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Espaço entre o header e os cards */
+.container header {
+  margin-bottom: 3rem; /* Aumenta o espaçamento entre o cabeçalho e os cards */
+}
+
+/* Estilo para as colunas dos cards (somente dentro da seção dos cards) */
+.even-columns {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: stretch; /* Garante alinhamento uniforme na altura */
+}
+
+/* Estilo dos cards */
+.pricing-card {
+  background-color: #ffffff;
+  border: 2px solid #A0D3A1;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 30%; /* Ajuste a proporção de largura */
+  margin-bottom: 2rem;
+  position: relative;
+  min-height: 300px;
+  flex-shrink: 0;
+}
+
+/* Card do meio - Premium */
+.pricing-card.premium {
+  flex: 1 1 40%; /* O card do meio terá uma largura maior */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajuste de largura para os cards laterais */
+.pricing-card:not(.premium) {
+  flex: 1 1 25%; /* Cards laterais com largura ligeiramente menor */
+}
+
+/* Efeito de hover dos cards */
+.pricing-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos adicionais para o título e descrições */
+.pricing-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.pricing-card h2 {
+  font-size: 2rem;
+  color: #408059;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.features img {
+  margin-right: 10px;
+}
+
+.features p {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: #408059;
+  margin: 1.5rem 0;
+}
+
+/* Estilos para o botão */
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #408059;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5fac5c;
+}

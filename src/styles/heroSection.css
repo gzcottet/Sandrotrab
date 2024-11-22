@@ -1,0 +1,14 @@
+/* heroSection.css */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #518650, #b2f3bc); /* Gradiente de verde */
+    padding: 8rem 2rem; /* Aumentando o padding */
+    min-height: 40vh; /* Definindo uma altura mínima */
+}
+
+.hero-content {
+    position: relative; /* Para garantir que o conteúdo fique acima das imagens */
+    z-index: 2; /* Coloca o conteúdo acima de tudo */
+    text-align: center; /* Alinha o texto ao centro */
+}

@@ -1,0 +1,55 @@
+/* Estrutura básica da seção Meio */
+.meio {
+  background-color: #8bce85; /* Verde claro */
+  padding: 40px;
+  margin: 20px 0;
+  color: #ffffff;
+  border-radius: 8px; /* Borda arredondada suave */
+}
+
+/* Contêiner que envolve o conteúdo da seção */
+.meio-content {
+  display: flex;
+  flex-direction: column; /* Alterado para coluna, pois só temos texto agora */
+  justify-content: center;
+  align-items: center; /* Alinha o conteúdo ao centro */
+}
+
+/* Contêiner do texto */
+.text-container {
+  text-align: center; /* Centraliza o texto */
+  max-width: 800px; /* Define um limite para a largura do texto */
+  padding: 30px; /* Aumentando o padding para deixar mais espaço ao redor do texto */
+  background-color: #8bce85; /* Fundo verde claro, igual ao da seção */
+  border: 2px solid #027c14; /* Borda verde escuro */
+  border-radius: 12px; /* Borda arredondada */
+  margin-top: 20px; /* Distância do contêiner para o restante do conteúdo */
+  
+  /* Efeito de flutuação com sombra */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1); /* Efeito de flutuação */
+  transition: all 0.3s ease-in-out; /* Suaviza a transição ao passar o mouse */
+}
+
+/* Efeito de flutuação ao passar o mouse */
+.text-container:hover {
+  transform: translateY(-10px); /* Eleva o contêiner ao passar o mouse */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.15); /* Aumenta a sombra */
+}
+
+/* Título da seção */
+.meio h2 {
+  font-size: 2rem; /* Tamanho maior para o título */
+  margin-bottom: 10px;
+  color: #333333; /* Cor do título mais escuro para contraste */
+  font-weight: bold;
+}
+
+/* Parágrafo */
+.meio p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333333; /* Cor do texto mais escuro */
+  text-align: justify;
+  margin-top: 10px;
+  padding: 0 20px; /* Adicionando padding lateral para evitar que o texto fique muito colado nas bordas */
+}

@@ -1,0 +1,147 @@
+:root {
+  --bg-color: #f1f5f2;
+  --primary-color: #408059;
+  --secondary-color: #5c4848;
+  --text-color: #252B42;
+  --second-text-color: #737373;
+  --light-gray: #ffffff;
+  --light-text-color: #efffef;
+
+  --ff-sans: "Montserrat", system-ui, sans-serif;
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 800;
+
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.25rem;
+
+  --py-sm: 0.875rem;
+  --py-base: 1rem;
+  --py-lg: 1.5rem;
+  --py-xl: 3rem;
+  --px-lg: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  color: var(--text-color);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.04em;
+}
+
+/* Soluções Section */
+.solutions {
+  text-align: center;
+  padding: var(--py-xl) 0;
+}
+
+.solutions h2 {
+  font-size: var(--fs-2xl);
+  margin-bottom: 1rem;
+  font-weight: var(--fw-bold);
+  color: #ffffff; /* Cor do texto em branco */
+}
+
+.solutions p {
+  color: var(--second-text-color);
+  margin-bottom: var(--py-lg);
+}
+
+/* Estilos da Box de Pesquisa */
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.search-box input {
+  padding: 0.75rem;
+  border: 2px solid #408059; /* Cor verde escura */
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+  width: 250px;
+}
+
+.search-box .search-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #5fac5c; /* Verde claro */
+  color: #ffffff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-box .search-btn:hover {
+  background-color: #408059; /* Verde escuro */
+}
+
+/* Cards na Seção de Soluções */
+.solutions .even-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center; /* Garante que os cartões fiquem centralizados */
+}
+
+.solutions .card {
+  padding: 2rem;
+  background-color: #ffffff; /* Cor de fundo do card */
+  border: 2px solid #408059; /* Bordas em verde escuro */
+  border-radius: 10px; /* Bordas arredondadas para os cards de soluções */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 calc(30% - 1.5rem); /* Faz com que os cartões ocupem 30% do espaço disponível */
+  min-width: 250px; /* Define uma largura mínima para evitar que os cartões fiquem muito estreitos */
+}
+
+.solutions .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.solutions .card h3 {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.5rem;
+  color: var(--card-text-color);
+}
+
+.solutions .card p {
+  font-size: var(--fs-sm);
+  color: var(--second-text-color);
+}
+
+.solutions .card .btn {
+  margin-top: auto;
+  padding: 10px;
+  background-color: #408059; /* Cor verde escura */
+  color: var(--light-text-color);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.solutions .card .btn:hover {
+  background-color: var(--primary-color);
+}

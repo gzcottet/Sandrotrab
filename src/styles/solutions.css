@@ -1,0 +1,110 @@
+/* Corpo da página */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block; /* Mudado de flex para block para não afetar outros elementos */
+  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+  overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Centralizar a frase "Do melhor jeito para você" */
+.solutions h2 {
+  text-align: center;
+  font-size: var(--fs-2xl); /* Ajuste conforme necessário */
+  margin-bottom: 1rem;
+  font-weight: var(--fw-bold);
+  color: #ffffff;
+  width: 100%; /* Garantir que ocupe toda a largura disponível */
+}
+
+/* Barra de pesquisa */
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto; /* Centraliza a barra de pesquisa */
+  width: 100%;
+}
+
+.search-box input {
+  padding: 0.75rem;
+  border: 5px solid #408059; /* Cor verde escura */
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+  width: 250px;
+}
+
+.search-box .search-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #5fac5c; /* Verde claro */
+  color: #ffffff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-box .search-btn:hover {
+  background-color: #408059; /* Verde escuro */
+}
+
+/* Contêiner principal para os cards */
+.even-columns {
+  display: flex;
+  flex-direction: row; /* Organiza os cards em uma linha */
+  gap: 2rem; /* Espaçamento entre os cards */
+  justify-content: center; /* Alinha os cards ao topo */
+  flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+  max-width: 1600px; /* Limita a largura máxima para o contêiner */
+  margin: 0 auto; /* Centraliza o contêiner */
+  padding: 0 1rem;
+  width: 100%;
+}
+
+/* Estilo dos cards */
+.card {
+  flex: 1 1 300px; /* Define uma largura mínima de 300px para os cards e permite expansão */
+  max-width: 380px; /* Limita a largura máxima dos cards */
+  padding: 3rem 2rem; /* Aumenta o padding vertical para tornar o card mais alto */
+  background-color: #ffffff;
+  border: 2px solid #408059; /* Borda verde escura */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto; /* Centraliza os cards dentro do contêiner */
+  height: 350px; /* Define uma altura maior para os cards, deixando-os mais verticais */
+  text-align: center; /* Garante que o conteúdo dos cards, incluindo imagens, fique centralizado */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Efeito de flutuar, movendo o card para cima */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar o efeito de flutuação */
+}
+
+.card img {
+  max-width: 80%; /* Limita a largura das imagens */
+  margin: 0 auto; /* Centraliza a imagem dentro do card */
+  display: block; /* Remove o espaçamento extra abaixo das imagens */
+}
+
+/* Estilos responsivos */
+@media (max-width: 992px) {
+  .card {
+    flex: 1 1 45%; /* Em telas médias, dois cards por linha */
+    max-width: 100%; /* Permite que o card se ajuste ao tamanho da tela */
+    height: 300px; /* Ajusta a altura dos cards em telas médias */
+    padding: 2.5rem 1.5rem; /* Ajusta o padding para ser menor */
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%; /* Em telas pequenas, um card por linha */
+    max-width: 100%;
+    height: 250px; /* Ajusta a altura dos cards em telas pequenas */
+    padding: 2rem 1rem; /* Ajusta o padding para telas pequenas */
+  }
+}

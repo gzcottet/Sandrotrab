@@ -1,0 +1,43 @@
+/* Estilo da logo */
+.logo-img {
+  width: 150px; /* Tamanho da logo */
+  height: auto;
+}
+
+/* Estilo do cabeçalho e navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #8bce85; /* Cor de fundo da navbar */
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:#000000; /* Cor do texto dos links na navbar */
+  font-weight: var(--fw-md);
+}
+
+nav ul li a:hover {
+  color: var(--primary-color); /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo dos botões */
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: #a9ffa9 ; /* Cor de fundo dos botões */
+  color: var(--light-text-color); /* Cor do texto dos botões */
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #ceffcd; /* Cor de fundo ao passar o mouse */
+}
